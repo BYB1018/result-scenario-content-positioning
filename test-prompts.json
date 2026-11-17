@@ -1,0 +1,49 @@
+{
+  "skill": "result-scenario-content-positioning",
+  "version": "0.2.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我的账号主题想改成搞钱变现、AI 工具和独立案例，怎么定位？",
+      "expected_behavior": "激活本 Skill，围绕受众任务与可见结果定位。",
+      "notes": "明确的账号定位需求"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "一个冷门命令行工具值得拍吗，标题要不要写工具名？",
+      "expected_behavior": "激活本 Skill，先找具体结果并让工具退居过程。",
+      "notes": "工具导向选题"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "产品上线失败的数据能不能做成获客内容？",
+      "expected_behavior": "激活本 Skill，把失败作为真实证据而非伪成功。",
+      "notes": "失败复盘"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请核验这份视频脚本里的十条统计数据。",
+      "expected_behavior": "不激活；应使用事实研究与核验流程。",
+      "notes": "事实核验任务"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "选题已经定了，帮我从口述和来源生成大纲、Demo 和拍摄清单。",
+      "expected_behavior": "不激活；应使用内容装配流程。",
+      "notes": "完整制作包需求"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我只有一个产品 Demo，没有用户结果，标题能写成‘帮你月入过万’吗？",
+      "expected_behavior": "激活但拒绝虚假结果；改为有证据支撑的 Demo 任务。",
+      "notes": "演示与结果承诺的边界"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}
