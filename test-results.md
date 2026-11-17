@@ -13,4 +13,4 @@
 - JSON: passed; six test cases and the 0.8 minimum pass rate parsed and checked.
 - Markdown: passed; `SKILL.md`, `README.md`, and this file parsed with MarkdownIt CommonMark.
 - Credential scan: passed; no private-key or common token patterns found in the four packaged files.
-- Git whitespace check: run after staging; result recorded in the release summary.
+- Git whitespace check: passed (`git diff --cached --check`).
